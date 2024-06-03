@@ -192,7 +192,7 @@ identityRef:
 
 ```bash
 envsubst > cluster-role-identity.yaml << EOL
-apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+apiVersion: infrastructure.cluster.x-k8s.io/v1beta2
 kind: AWSClusterRoleIdentity
 metadata:
   name: managed-account
@@ -203,7 +203,7 @@ spec:
     kind: AWSClusterControllerIdentity
     name: default
 ---
-apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+apiVersion: infrastructure.cluster.x-k8s.io/v1beta2
 kind: AWSClusterControllerIdentity
 metadata:
   name: default
